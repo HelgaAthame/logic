@@ -19,3 +19,5 @@ export const Tag = memo(({ number, setNumber, selectedTag, tag }: Props) => (
     {tag}
   </div>
 ));
+
+Tag.displayName="Tag"

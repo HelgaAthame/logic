@@ -1,4 +1,4 @@
-import Image from "next/image";
+import Image from "next/legacy/image";
 import { apiurl } from "@/consts/apiurl";
 import { useMemo } from "react";
 import { Course } from "@/types/Course";

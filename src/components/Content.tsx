@@ -39,3 +39,5 @@ export const Content = memo(({ courses }: Props) => {
     </main>
   );
 });
+
+Content.displayName = "Content";
