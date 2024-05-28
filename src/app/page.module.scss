@@ -1,0 +1,107 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;800&display=swap");
+
+.main {
+  display: flex;
+  justify-content: space-between;
+  padding: 1.5rem;
+  width: 100vw;
+  gap: 1.5rem;
+}
+
+.aside {
+  top: 1.5rem;
+  position: sticky;
+  width: 16.5rem;
+  border: 1px solid #cfcfe4;
+  border-radius: 1.125rem;
+  display: flex;
+  flex-direction: column;
+  height: min-content;
+  padding: 0.75rem;
+  .tag {
+    cursor: pointer;
+    padding: 0.75rem;
+    font-family: Nunito;
+    font-size: 18px;
+    font-weight: 800;
+    line-height: 18px;
+    letter-spacing: -0.10000000149011612px;
+    text-align: left;
+    color: #39414b;
+  }
+  .selectedTag {
+    background: #5fbf77;
+    color: #ffffff;
+    border-radius: 0.75rem;
+  }
+}
+
+.section {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  max-width: 100%;
+  flex-grow: 1;
+  gap: 1.125rem;
+  .card {
+    height: 14.25rem;
+    box-shadow: 0px 10px 13px -4px #23235f30;
+    border-radius: 1.125rem;
+    display: flex;
+    flex-direction: column;
+    .cardImage {
+      position: relative;
+      flex-grow: 1;
+      border-top-left-radius: 1.125rem;
+      border-top-right-radius: 1.125rem;
+    }
+    &:nth-child(8n + 1) {
+      .cardImage {
+        background-color: #ff9966;
+      }
+    }
+    &:nth-child(8n + 2) {
+      .cardImage {
+        background-color: #f3c692;
+      }
+    }
+    &:nth-child(8n + 3) {
+      .cardImage {
+        background-color: #f1c161;
+      }
+    }
+    &:nth-child(8n + 4) {
+      .cardImage {
+        background-color: #ff9ab4;
+      }
+    }
+    &:nth-child(8n + 5) {
+      .cardImage {
+        background-color: #ffcc74;
+      }
+    }
+    &:nth-child(8n + 6) {
+      .cardImage {
+        background-color: #73dce5;
+      }
+    }
+    &:nth-child(8n + 7) {
+      .cardImage {
+        background-color: #fad76e;
+      }
+    }
+    &:nth-child(8n) {
+      .cardImage {
+        background-color: #80caff;
+      }
+    }
+    .cardTitle {
+      height: 3.188rem;
+      font-family: Nunito;
+      font-size: 18px;
+      font-weight: 800;
+      line-height: 18px;
+      text-align: left;
+      padding: 0.75rem 1.125rem;
+    }
+  }
+}
