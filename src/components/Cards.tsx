@@ -20,3 +20,5 @@ export const Cards = memo(({ courses, selectedTag, tags }: Props) => (
       ))}
   </section>
 ));
+
+Cards.displayName="Cards"

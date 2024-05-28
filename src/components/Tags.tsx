@@ -21,3 +21,5 @@ export const Tags = memo(({ tags, selectTag, selectedTag }: Props) => (
     ))}
   </aside>
 ));
+
+Tags.displayName = "Tags";

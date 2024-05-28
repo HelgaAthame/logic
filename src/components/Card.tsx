@@ -1,6 +1,6 @@
 import { memo } from "react";
 import styles from "@/app/page.module.scss";
-import Image from "next/image";
+import Image from "next/legacy/image";
 
 interface Props {
   id: string;
@@ -17,8 +17,11 @@ export const Card = memo(({ id, image, name }: Props) => (
         objectFit="contain"
         layout="fill"
         sizes="100%"
+        priority
       />
     </div>
     <div className={styles.cardTitle}>{name}</div>
   </div>
 ));
+
+Card.displayName="Card"
