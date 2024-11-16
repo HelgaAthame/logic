@@ -1,8 +1,8 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {
+const nextConfig = {  
+  output: "export", 
+  basePath: "/logic",
   images: {
-    output: "export", 
-    basePath: "/logic",
     domains: ["localhost", "s3.logiclike.com"],
     unoptimized: true
   },
