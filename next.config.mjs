@@ -1,7 +1,10 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   images: {
-    domains: ["s3.logiclike.com"],
+    output: "export", 
+    basePath: "/logic",
+    domains: ["localhost", "s3.logiclike.com"],
+    unoptimized: true
   },
 };
 
